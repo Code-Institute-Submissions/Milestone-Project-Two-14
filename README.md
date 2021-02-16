@@ -1,45 +1,48 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Rock Paper Scissors</h1>
 
-Welcome USER_NAME,
+<h2>Interactive Frontend Development Milestone Project Two</h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+<P>My second Milestone Project will be an Interactive rock, paper, scissors game powered by Javascript.</p>
 
-## Gitpod Reminders
+<h2>User Experience (UX)</h2>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<p>This website is designed to be an interactive Rock Paper Scissors game, where the user plays against the computer and can track their scores.</p>
 
-`python3 -m http.server`
+<h2>User Stories</h2>
 
-A blue button should appear to click: *Make Public*,
+<h3>User Story 1</h3>
 
-Another blue button should appear to click: *Open Browser*.
+<p>As a user I want to play Rock Paper Scissors.</p>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<h3>Acceptance Criteria</h3>
 
-A blue button should appear to click: *Make Public*,
+<ul>
+    <li>User should be able to select Rock, Paper or Scissors.</li>
+    <li>User should be able to see the outcome of their selection.</li>
+    <li>User should ba able to see the outcome of the computers selection.</li>
+</ul>
 
-Another blue button should appear to click: *Open Browser*.
+<h3>Description:</h3>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<p>
+once the user picks rock paper or scissors the large text area to the right will show what the user picked and what the computer picked.</p>
+<p>The smaller text area will show if the user wins, looses or draws. This text area will also change colour green for a win, red for a loss and amber for a draw.</p>
 
-## Updates Since The Instructional Video
+<h3>User Story 2</h3>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<p>As a user I want to know how to play the game.</p>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<h3>Acceptance Criteria</h3>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<ul>
+    <li>The instructions should be clear and easy to understand.</li>
+    <li>The instructions should be available through the instructions button.</li>
+    <li>Instructions should be accessible at any time.</li>
+    <li>All interactive parts of the website should be clearly labeled.</li>
+</ul>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<h3>Description:</h3>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<P>To see the instructions at any point press the button labeled instructions and a pop will appear showing the instructions.</P>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+<h2>Technologies</h2>
