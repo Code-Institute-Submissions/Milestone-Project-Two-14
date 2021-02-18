@@ -118,3 +118,7 @@ GitPod - https://www.gitpod.io/
 <h2>Deployment</h2>
 
 <h2>Credits</h2>
+
+https://www.w3schools.com/
+
+https://www.freecodecamp.org/
