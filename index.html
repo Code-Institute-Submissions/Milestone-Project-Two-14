@@ -13,48 +13,41 @@
 </head>
 <body>
     <header>
-        <div id="my-menu-bar"> <!--Colour switch, Instruction and GitHub-->
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <div class="switch">
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Night/Day</label>
-                </div>
-                <button type="button" class="btn btn-primary">Instructions</button>
-                <button type="button" class="btn btn-primary">GitHub</button>
-            </div>
+        <div id="menu-container"> <!--Colour switch, Instruction and GitHub-->
+            <input class="btn btn-primary" type="button" value="Night/Day">
+            <input class="btn btn-primary" type="button" value="Instructions">
+            <input class="btn btn-primary" type="button" value="GitHub">
         </div>
     </header>
-    <div class="game-container center green-border"> <!--Container for main game area-->
-        <ul class="score-board green-border">
-            <li class="center-score-board green-border">
-                <div class="score-board-area green-border">win</div>
-                <div class="score-board-area green-border">result</div>
+    <div id="outer-main-container" class="center green-border"> <!--Container for main game area-->
+        <ul id="score-container" class="green-border"> <!--scoreboard container-->
+            <li class="inner-score-container green-border">
+                <div id="win-lable" class="score-board-area green-border">win</div>
+                <div id="win-score" class="score-board-area green-border">result</div>
             </li>
-            <li class="center-score-board green-border">
-                <div class="score-board-area green-border">lose</div>
-                <div class="score-board-area green-border">result</div>
+            <li class="inner-score-container green-border">
+                <div id="lose-lable" class="score-board-area green-border">lose</div>
+                <div id="lose-score" class="score-board-area green-border">result</div>
             </li>
-            <li class="center-score-board green-border">
-                <div class="score-board-area green-border">draw</div>
-                <div class="score-board-area green-border">result</div>
+            <li class="inner-score-container green-border">
+                <div id="draw-lable" class="score-board-area green-border">draw</div>
+                <div id="draw-score" class="score-board-area green-border">result</div>
             </li>
         </ul>
-        <div class="green-border inner-game-container">
+        <div id="inner-game-container" class="green-border">
             <div class="btn-group-vertical">
-                <button class="btn btn-primary" type="button">Rock</button>
-                <button class="btn btn-primary" type="button">Paper</button>
-                <button class="btn btn-primary" type="button">Scissors</button>
+                <input class="btn btn-primary" type="button" value="Rock">
+                <input class="btn btn-primary" type="button" value="Paper">
+                <input class="btn btn-primary" type="button" value="Scissors">
             </div>
-            <div class="result-area-text green-border">
+            <div class="result-area-text green-border test-padding">
                 <div class="user-computer-area">
-                    <div>computer</div>
-                    <div class="green-border">draw</div>
-                    <div>user</div>
-                    <div class="green-border">draw</div>
+                    <div class="green-border">computer</div>
+                    <div id="computer-selection" class="green-border">draw</div>
+                    <div class="green-border">user</div>
+                    <div id="user-selection" class="green-border">draw</div>
                 </div>
-                <div class="result-area green-border">
+                <div id="result-area" class="green-border ">
                    results 
                 </div>
             </div>
