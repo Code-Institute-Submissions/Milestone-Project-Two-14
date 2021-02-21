@@ -122,3 +122,8 @@ GitPod - https://www.gitpod.io/
 https://www.w3schools.com/
 
 https://www.freecodecamp.org/
+
+The game
+https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+
+https://css-tricks.com/
