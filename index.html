@@ -5,20 +5,19 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie-edge" http-equiv="X-UA-Compatible">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Orbitron:wght@400;500;600&family=Turret+Road:wght@500&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/807aa8c83d.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="assets/js/jquery-3.5.1.js"></script>
 	<title >Rock, Paper Scissors, Lizard, Spock</title>
 </head>
 <body>
@@ -33,16 +32,16 @@
         <ul id="score-container" class="green-border"> <!--scoreboard container-->
             <li class="inner-score-container green-border">
                 <div id="win-lable" class="score-board-area green-border">win</div>
-                <div id="win-score" class="score-board-area score-board-area-result green-border">007</div>
+                <div id="win-score" class="score-board-area score-board-area-result green-border">000</div>
             </li>
             <li class="inner-score-container green-border">
                 <div id="lose-lable" class="score-board-area green-border">lose</div>
                 <div id="lose-score" class="score-board-area 
-                score-board-area-result green-border">008</div>
+                score-board-area-result green-border">000</div>
             </li>
             <li class="inner-score-container green-border">
                 <div id="draw-lable" class="score-board-area green-border">draw</div>
-                <div id="draw-score" class="score-board-area score-board-area-result green-border">005</div>
+                <div id="draw-score" class="score-board-area score-board-area-result green-border">000</div>
             </li>
         </ul>
         <div id="inner-game-container" class="green-border"> <!--game buttons-->
@@ -50,19 +49,19 @@
 
                 <ul  class="game-button-links">
                     <li class="">
-						<button onclick="rock_button" class="btn"><i class="far fa-hand-rock"></i> Rock</button>
+						<button onclick="rock_button" class="btn button_rock"><i class="far fa-hand-rock"></i> Rock</button>
                     </li>
                     <li class="">
-						<button onclick="paper_button" class="btn"><i class="far fa-hand-paper"></i> Paper</button>
+						<button onclick="paper_button" class="btn button_paper"><i class="far fa-hand-paper"></i> Paper</button>
                     </li>
                     <li class="">
-						<button onclick="scissors_button" class="btn"><i class="far fa-hand-scissors"></i> Scissors</button>
+						<button onclick="scissors_button" class="btn button_scissors"><i class="far fa-hand-scissors"></i> Scissors</button>
                     </li>
                     <li class="">
-						<button onclick="lizard_button" class="btn"><i class="far fa-hand-lizard"></i> Lizard</button>
+						<button onclick="lizard_button" class="btn button_lizard"><i class="far fa-hand-lizard"></i> Lizard</button>
                     </li>
                     <li class="">
-						<button onclick="spock_button" class="btn"><i class="far fa-hand-spock"></i> Spock</button>
+						<button onclick="spock_button" class="btn button_spock"><i class="far fa-hand-spock"></i> Spock</button>
                     </li>
 					</ul>
 
@@ -132,7 +131,7 @@
         </div>
         
 	</footer>
-
+    <script src="assets/js/game.js"></script>
 </body>
 
 </html>
