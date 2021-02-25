@@ -127,3 +127,19 @@ The game
 https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
 
 https://css-tricks.com/
+
+https://www.dafont.com/open-24-display-st.font
+Open 24 Display ST
+https://www.dafont.com/south-type.d5515
+Rodrigo Gonzalez [Southype]
+
+
+https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+
+https://www.fontsquirrel.com/tools/webfont-generator
+
+css ttf font example
+@font-face {
+  font-family: 'Tagesschrift';
+  src: url('tagesschrift.ttf');
+}
