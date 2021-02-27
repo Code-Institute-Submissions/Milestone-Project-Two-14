@@ -155,3 +155,26 @@ ul {
 .far {
     font-size: 2rem;
 }
+
+.span-result-draw {
+    font-size: xx-large;
+    font-weight: 700;
+    color: orange;
+}
+
+.span-result-win {
+    font-size: xx-large;
+    font-weight: 700;
+    color: green;
+}
+
+.span-result-lose {
+    font-size: xx-large;
+    font-weight: 700;
+    color: red;
+}
+
+.play-a-game {
+    font-size: xx-large;
+    font-weight: 700;
+}
