@@ -33,12 +33,12 @@ var userPick;
 //rock click
 $('.button_rock').click(function() {
     userPick = 1;
-    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//computer picks
+    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
   
     //draw case, rock vs rock
     if (Hal9000Pick === userPick) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>The Computer chose Rock too!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Rock too!</p>').fadeIn(300);
       
             draw++;   
             $('#draw-score').html('').append(draw);
@@ -47,7 +47,7 @@ $('.button_rock').click(function() {
     // rock vs Hal9000 paper
     } else if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Paper.<br>Rock covered by Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Paper.<br>Rock covered by Paper!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -56,7 +56,7 @@ $('.button_rock').click(function() {
     // rock vs Hal9000 scissors
     } else if (Hal9000Pick === 3) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Scissors.<br>Rock smashes Scissors!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Scissors.<br>Rock smashes Scissors!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -65,7 +65,7 @@ $('.button_rock').click(function() {
     // rock vs Hal9000 lizard
     } else if (Hal9000Pick === 4) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Lizard.<br>Rock crushes Lizard!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Lizard.<br>Rock crushes Lizard!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -74,7 +74,7 @@ $('.button_rock').click(function() {
     // rock vs Hal9000 spock
     } else {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Spock.<br>Rock vaporized by Spock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Spock.<br>Rock vaporized by Spock!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -85,12 +85,12 @@ $('.button_rock').click(function() {
 //paper click
 $('.button_paper').click(function() {
     userPick = 2;
-    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//computer picks
+    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
   
     //draw case, paper vs paper
     if (Hal9000Pick === userPick) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>The Computer chose paper too!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose paper too!</p>').fadeIn(300);
       
             draw++;
             $('#draw-score').html('').append(draw);
@@ -99,7 +99,7 @@ $('.button_paper').click(function() {
     // paper vs Hal9000 rock
     } else if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Rock.<br>Rock covered by Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Rock.<br>Rock covered by Paper!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -108,7 +108,7 @@ $('.button_paper').click(function() {
     // paper vs Hal9000 scissors
     } else if (Hal9000Pick === 3) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Scissors.<br>Paper cut by Scissors!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Scissors.<br>Paper cut by Scissors!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -117,7 +117,7 @@ $('.button_paper').click(function() {
     // paper vs Hal9000 lizard
     } else if (Hal9000Pick === 4) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Lizard.<br>Paper eaten by Lizard!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Lizard.<br>Paper eaten by Lizard!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -126,7 +126,7 @@ $('.button_paper').click(function() {
     // paper vs Hal9000 spock
     } else {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Spock.<br>Paper disproves Spock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Spock.<br>Paper disproves Spock!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -137,12 +137,12 @@ $('.button_paper').click(function() {
 //scissors click
 $('.button_scissors').click(function() {
     userPick = 3;
-    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//computer picks
+    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
   
     //draw case, scissors vs scissors
     if (Hal9000Pick === userPick) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>The Computer chose scissors too!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose scissors too!</p>').fadeIn(300);
       
             draw++;
             $('#draw-score').html('').append(draw);
@@ -151,7 +151,7 @@ $('.button_scissors').click(function() {
     // scissors vs Hal9000 rock
     } else if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Rock.<br>Scissors smashed by Rock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Rock.<br>Scissors smashed by Rock!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -160,7 +160,7 @@ $('.button_scissors').click(function() {
     // scissors vs Hal9000 paper
     } else if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Paper.<br>Scissors cuts Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Paper.<br>Scissors cuts Paper!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -169,7 +169,7 @@ $('.button_scissors').click(function() {
     // scissors vs Hal9000 lizard
     } else if (Hal9000Pick === 4) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Lizard.<br>Scissors decapitates Lizard!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Lizard.<br>Scissors decapitates Lizard!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -178,7 +178,7 @@ $('.button_scissors').click(function() {
     // scissors vs Hal9000 spock
     } else {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Spock.<br>Scissors smashed by Spock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Spock.<br>Scissors smashed by Spock!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -189,12 +189,12 @@ $('.button_scissors').click(function() {
 //lizard click
 $('.button_lizard').click(function() {
     userPick = 4;
-    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//computer picks
+    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
   
     //draw case, scissors vs scissors
     if (Hal9000Pick === userPick) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>The Computer chose lizard too!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose lizard too!</p>').fadeIn(300);
       
             draw++;
             $('#draw-score').html('').append(draw);
@@ -203,7 +203,7 @@ $('.button_lizard').click(function() {
     // lizard vs Hal9000 rock
     } else if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Rock.<br>Lizard crushed by Rock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Rock.<br>Lizard crushed by Rock!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -212,7 +212,7 @@ $('.button_lizard').click(function() {
     // lizard vs Hal9000 paper
     } else if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Paper.<br>Lizard eats Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Paper.<br>Lizard eats Paper!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -221,7 +221,7 @@ $('.button_lizard').click(function() {
     // lizard vs Hal9000 scissors
     } else if (Hal9000Pick === 3) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Scissors.<br>Lizard decapitated by Scissors!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Scissors.<br>Lizard decapitated by Scissors!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -230,7 +230,7 @@ $('.button_lizard').click(function() {
     // lizard vs Hal9000 spock
     } else {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Spock.<br>Lizard poisons Spock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Spock.<br>Lizard poisons Spock!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -241,12 +241,12 @@ $('.button_lizard').click(function() {
 //spock click
 $('.button_spock').click(function() {
     userPick = 5;
-    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//computer picks
+    var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
   
     //draw case, spock vs spock
     if (Hal9000Pick === userPick) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>The Computer chose Spock too!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Spock too!</p>').fadeIn(300);
       
             draw++;
             $('#draw-score').html('').append(draw);
@@ -255,7 +255,7 @@ $('.button_spock').click(function() {
     // spock vs Hal9000 rock
     } else if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Rock.<br>Spock vaporizes Rock!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Rock.<br>Spock vaporizes Rock!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -264,7 +264,7 @@ $('.button_spock').click(function() {
     // spock vs Hal9000 paper
     } else if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Paper.<br>pock disproved by Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Paper.<br>pock disproved by Paper!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
@@ -273,7 +273,7 @@ $('.button_spock').click(function() {
     // spock vs Hal9000 scissors
     } else if (Hal9000Pick === 3) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Computer chose Scissors.<br>Spock smashes Scissors!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Scissors.<br>Spock smashes Scissors!</p>').fadeIn(300);
       
             win++;
             $('#win-score').html('').append(win);
@@ -282,7 +282,7 @@ $('.button_spock').click(function() {
     // spock vs Hal9000 lizard
     } else {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Computer chose Lizard.<br>Spock poised by Lizard!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Lizard.<br>Spock poised by Lizard!</p>').fadeIn(300);
       
             lose++;
             $('#lose-score').html('').append(lose);
