@@ -23,29 +23,28 @@
 <body>
     <header>
         <div id="menu-container"> <!--Colour switch, Instruction and GitHub-->
-            <input class="btn btn-primary" type="button" value="Night/Day">
-            <input class="btn btn-primary" type="button" value="Instructions">
-            <input class="btn btn-primary" type="button" value="GitHub">
+            <input class="btn day-night-button" type="button" value="Night">
+            <input class="btn instructions-button" type="button" value="Instructions">
+            <input class="btn github-button" type="button" value="GitHub">
         </div>
     </header>
-    <div id="outer-main-container" class="center green-border"> <!--Container for main game area-->
-        <ul id="score-container" class="green-border"> <!--scoreboard container-->
-            <li class="inner-score-container green-border">
-                <div id="win-lable" class="score-board-area green-border">win</div>
-                <div id="win-score" class="score-board-area score-board-area-result green-border">000</div>
+    <div id="outer-main-container" class="center"> <!--Container for main game area-->
+        <ul id="score-container" class=""> <!--scoreboard container-->
+            <li class="inner-score-container">
+                <div id="win-lable" class="score-board-area">win</div>
+                <div id="win-score" class="score-board-area-result">000</div>
             </li>
-            <li class="inner-score-container green-border">
-                <div id="lose-lable" class="score-board-area green-border">lose</div>
-                <div id="lose-score" class="score-board-area 
-                score-board-area-result green-border">000</div>
+            <li class="inner-score-container">
+                <div id="lose-lable" class="score-board-area">lose</div>
+                <div id="lose-score" class="score-board-area-result">000</div>
             </li>
-            <li class="inner-score-container green-border">
-                <div id="draw-lable" class="score-board-area green-border">draw</div>
-                <div id="draw-score" class="score-board-area score-board-area-result green-border">000</div>
+            <li class="inner-score-container">
+                <div id="draw-lable" class="score-board-area">draw</div>
+                <div id="draw-score" class="score-board-area-result">000</div>
             </li>
         </ul>
-        <div id="inner-game-container" class="green-border"> <!--game buttons-->
-            <div id="game-button-group" class="btn-group-vertical green-border">
+        <div id="inner-game-container" class=""> <!--game buttons-->
+            <div id="game-button-group" class="btn-group-vertical">
 
                 <ul  class="game-button-links">
                     <li class="">
@@ -66,14 +65,14 @@
 				</ul>
 
             </div>
-            <div class="result-area-text green-border test-padding">
-                <div class="user-computer-area">
-                    <div id="message-area" class=""><p class="play-a-game">Would You Like<br>To Play A Game?</p></div>
+            <div class="result-area-text test-padding">
+                <div id="message-area" class="">
+                    <p class="play-a-game">Would You Like<br>To Play A Game?</p>
                 </div>
 
             </div>
         </div>
-        <button type="button" class="btn btn-danger reset_button">Reset</button> <!--score reset button-->
+        <button type="button" class="btn reset_button">Reset</button> <!--score reset button-->
     </div>
 
     <footer>

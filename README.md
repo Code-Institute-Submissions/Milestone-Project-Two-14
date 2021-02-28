@@ -143,3 +143,7 @@ css ttf font example
   font-family: 'Tagesschrift';
   src: url('tagesschrift.ttf');
 }
+
+https://coolors.co/
+
+https://sweetalert2.github.io/

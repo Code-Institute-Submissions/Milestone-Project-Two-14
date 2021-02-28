@@ -2,7 +2,7 @@ var win = 0;
 var lose = 0;
 var draw = 0;
 var userPick;
-
+var dayNight = 0;
 
                 //Rock covered by Paper - lose
                 //Rock smashes Scissors - win
@@ -292,8 +292,54 @@ $('.button_spock').click(function() {
 
 // reset button
 $('.reset_button').click(function() {
-    $('#lose-score').html('').append('000');
-    $('#win-score').html('').append('000');
-    $('#draw-score').html('').append('000');
+    
+    $('#lose-score').html('').append('000').fadeIn(300);
+
+    $('#win-score').html('').append('000').fadeIn(300);
+
+    $('#draw-score').html('').append('000').fadeIn(300);
+
     $("#message-area").html('').append('<p class="play-a-game">Would You Like<br>To Play A Game?</p>').fadeIn(300);
+});
+
+// day/night button
+$(document).ready(function(){
+  $('.day-night-button').click(function(){
+
+    if (dayNight === 0) { //test for day or night, 0 = day, 1 = night
+
+        $("p").css("background-color", "yellow"); // changes <p></p> to yellow
+
+        // day settings
+        // need to configure night settings
+
+        //body {
+        //    background-color: rgb(255, 243, 176);
+        //}
+
+        //#inner-game-container {
+        //    background-color: rgb(224, 159, 62);
+        //}
+
+
+        //.btn {
+        //    background-color: #CD4134;
+        //}
+
+        //.btn:hover {
+        //    background-color: rgb(38, 70, 83);
+        //    color: rgb(221, 200, 162);
+        //}
+        //<input class="btn day-night-button" type="button" value="Night">
+        //the value on the day-night-button needs to change to day or night
+        //depending on the value of var dayNight
+        //then adjust var dayNight to either 0 for day or 1 for night
+
+    }
+
+    
+
+
+
+  });
 });

@@ -10,7 +10,7 @@ body {
     margin-left: auto ;
     margin-right: auto;
     font-family: 'Jura', sans-serif;
-    background-color: #112229;
+    background-color: rgb(255, 243, 176);
     color: white;
 }
 
@@ -59,6 +59,7 @@ ul {
     margin: 10px;
     height: 200px;
     width: 400px;
+    font-size: 2rem;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -67,23 +68,11 @@ ul {
     background-color: black;
 }
 
-.green-border {
-    /*for testing*/
-    border: 1px solid green;
-}
-
 #result-area {
     height: 80px;
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
 }
-
-#message-area {
-    height: 80px;
-    font-size: 20px;
-}
-
-
 
 .social-links li a i {
     margin-top: 15px;
@@ -94,7 +83,7 @@ ul {
     font-size: 13px;
     line-height: 7px;
     text-align: center;
-    color: white;
+    color: rgb(221, 200, 162);
     background: #CD4134;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -104,11 +93,12 @@ ul {
 
 .social-links li a i:hover {
     border-radius: 50%;
-    color: black;
+    background-color: rgb(38, 70, 83);
+    color: rgb(221, 200, 162);
 }
 
 #inner-game-container {
-    background-color: rgb(58, 8, 8);
+    background-color: rgb(224, 159, 62);
     margin: auto;
     height: 335px;
     width: 80%;
@@ -126,21 +116,27 @@ ul {
     background-color: black;
 }
 
+.score-board-area {
+    font-size: 2rem;
+    color: black;
+}
+
 #game-button-group {
     width: 145px;
     padding-inline-start: 0px;
     list-style-type: none;
-
 }
 
-
+.game-button-links {
+    margin: auto;
+}
 
 /* Style buttons */
 .btn {
   width: 130px;
-  background-color: DodgerBlue; /* Blue background */
+  background-color: #CD4134; /* Blue background */
   border: 0; /* Remove borders */
-  color: white; /* White text */
+  color: rgb(221, 200, 162); /* White text */
   padding: 5px 5px; /* Some padding */
   font-size: 20px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
@@ -149,7 +145,8 @@ ul {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(38, 70, 83);
+  color: rgb(221, 200, 162);
 }
 
 .far {
