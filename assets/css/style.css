@@ -100,7 +100,7 @@ ul {
 #inner-game-container {
     background-color: rgb(224, 159, 62);
     margin: auto;
-    height: 335px;
+    height: 320px;
     width: 80%;
     padding: 5px 5px 5px 5px;
     list-style-type: none;
@@ -118,7 +118,7 @@ ul {
 
 .score-board-area {
     font-size: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #game-button-group {
@@ -174,4 +174,39 @@ ul {
 .play-a-game {
     font-size: xx-large;
     font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    #outer-main-container {
+    margin: auto;
+    width: 600px;
+    height:600px;
+}
+
+#menu-container {
+    text-align: center;
+    width: 595px
+}
+
+.inner-score-container {
+    margin: 0px;
+}
+
+#inner-game-container {
+    background-color: rgb(224, 159, 62);
+    height: 308px;
+    width: 580px;
+    padding: 0;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.social-links {
+    width: 600px;
+}
+
+* {
+    margin: auto;
+}
+
 }

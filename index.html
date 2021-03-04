@@ -17,6 +17,8 @@
 
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <script src="assets/js/jquery-3.5.1.js"></script>
 	<title >Rock, Paper Scissors, Lizard, Spock</title>
 </head>
@@ -32,15 +34,15 @@
         <ul id="score-container" class=""> <!--scoreboard container-->
             <li class="inner-score-container">
                 <div id="win-lable" class="score-board-area">win</div>
-                <div id="win-score" class="score-board-area-result">000</div>
+                <div id="win-score" class="score-board-area-result">0</div>
             </li>
             <li class="inner-score-container">
                 <div id="lose-lable" class="score-board-area">lose</div>
-                <div id="lose-score" class="score-board-area-result">000</div>
+                <div id="lose-score" class="score-board-area-result">0</div>
             </li>
             <li class="inner-score-container">
                 <div id="draw-lable" class="score-board-area">draw</div>
-                <div id="draw-score" class="score-board-area-result">000</div>
+                <div id="draw-score" class="score-board-area-result">0</div>
             </li>
         </ul>
         <div id="inner-game-container" class=""> <!--game buttons-->
@@ -76,10 +78,10 @@
     </div>
 
     <footer>
-		<div class="container-fluid social-media-container">
+		<div class="">
 			<div class="row">
-				<div class="col page-banner">
-					<ul class="list-inline social-links">
+				<div class="col">
+					<ul class="social-links">
 						<li class="list-inline-item">
 							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="sr-only">Facebook</span></a>
 						</li>

@@ -34,15 +34,8 @@ var dayNight = 0;
 $('.button_rock').click(function() {
     userPick = 1;
     var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
-    //draw case, rock vs rock
-    if (Hal9000Pick === userPick) {
-        $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Rock too!</p>').fadeIn(300);
-            draw++;   
-            $('#draw-score').html('').append(draw);
-        });
     // rock vs Hal9000 paper
-    } else if (Hal9000Pick === 2) {
+    if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Paper.<br>Rock covered by Paper!</p>').fadeIn(300);
             lose++;
@@ -63,12 +56,20 @@ $('.button_rock').click(function() {
             $('#win-score').html('').append(win);
         });
     // rock vs Hal9000 spock
-    } else {
+    } else if (Hal9000Pick === 5) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Spock.<br>Rock vaporized by Spock!</p>').fadeIn(300);
             lose++;
             $('#lose-score').html('').append(lose);
-        });                
+        });
+    //draw case, rock vs rock
+    } else {
+        $("#message-area").fadeOut(300, function() {
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Rock too!</p>').fadeIn(300);
+            draw++;   
+            $('#draw-score').html('').append(draw);
+        });
+
     }
 });//end of rock click
 
@@ -76,15 +77,8 @@ $('.button_rock').click(function() {
 $('.button_paper').click(function() {
     userPick = 2;
     var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
-    //draw case, paper vs paper
-    if (Hal9000Pick === userPick) {
-        $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose paper too!</p>').fadeIn(300);
-            draw++;
-            $('#draw-score').html('').append(draw);
-        });
     // paper vs Hal9000 rock
-    } else if (Hal9000Pick === 1) {
+    if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Rock.<br>Rock covered by Paper!</p>').fadeIn(300);
             win++;
@@ -105,12 +99,19 @@ $('.button_paper').click(function() {
             $('#lose-score').html('').append(lose);
         });
     // paper vs Hal9000 spock
-    } else {
+    } else if (Hal9000Pick === 5) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Spock.<br>Paper disproves Spock!</p>').fadeIn(300);
             win++;
             $('#win-score').html('').append(win);
-        });                
+        });
+    //draw case, paper vs paper
+    } else {
+        $("#message-area").fadeOut(300, function() {
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose paper too!</p>').fadeIn(300);
+            draw++;
+            $('#draw-score').html('').append(draw);
+        });
     }
 });//end of paper click
 
@@ -118,15 +119,8 @@ $('.button_paper').click(function() {
 $('.button_scissors').click(function() {
     userPick = 3;
     var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
-    //draw case, scissors vs scissors
-    if (Hal9000Pick === userPick) {
-        $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose scissors too!</p>').fadeIn(300);
-            draw++;
-            $('#draw-score').html('').append(draw);
-        });
     // scissors vs Hal9000 rock
-    } else if (Hal9000Pick === 1) {
+    if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Rock.<br>Scissors smashed by Rock!</p>').fadeIn(300);
             lose++;
@@ -147,12 +141,20 @@ $('.button_scissors').click(function() {
             $('#win-score').html('').append(win);
         });
     // scissors vs Hal9000 spock
-    } else {
+    } else if (Hal9000Pick === 5) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Spock.<br>Scissors smashed by Spock!</p>').fadeIn(300);
             lose++;
             $('#lose-score').html('').append(lose);
-        });                
+        });
+    //draw case, scissors vs scissors
+    } else {
+        $("#message-area").fadeOut(300, function() {
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose scissors too!</p>').fadeIn(300);
+            draw++;
+            $('#draw-score').html('').append(draw);
+        });
+
     }
 });//end of scissors click
 
@@ -160,15 +162,8 @@ $('.button_scissors').click(function() {
 $('.button_lizard').click(function() {
     userPick = 4;
     var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
-    //draw case, scissors vs scissors
-    if (Hal9000Pick === userPick) {
-        $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose lizard too!</p>').fadeIn(300);
-            draw++;
-            $('#draw-score').html('').append(draw);
-        });
     // lizard vs Hal9000 rock
-    } else if (Hal9000Pick === 1) {
+    if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Rock.<br>Lizard crushed by Rock!</p>').fadeIn(300);
             lose++;
@@ -189,12 +184,19 @@ $('.button_lizard').click(function() {
             $('#lose-score').html('').append(lose);
         });
     // lizard vs Hal9000 spock
-    } else {
+    } else if (Hal9000Pick === 5) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Spock.<br>Lizard poisons Spock!</p>').fadeIn(300);
             win++;
             $('#win-score').html('').append(win);
-        });                
+        });
+    //draw case, scissors vs scissors                
+    } else {
+        $("#message-area").fadeOut(300, function() {
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose lizard too!</p>').fadeIn(300);
+            draw++;
+            $('#draw-score').html('').append(draw);
+        });
     }
 });//end of lizard click
 
@@ -202,15 +204,8 @@ $('.button_lizard').click(function() {
 $('.button_spock').click(function() {
     userPick = 5;
     var Hal9000Pick = Math.floor(Math.random() * 5 + 1);//Hal9000 picks
-    //draw case, spock vs spock
-    if (Hal9000Pick === userPick) {
-        $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Spock too!</p>').fadeIn(300);
-            draw++;
-            $('#draw-score').html('').append(draw);
-        });
     // spock vs Hal9000 rock
-    } else if (Hal9000Pick === 1) {
+    if (Hal9000Pick === 1) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-win">You Won!</span><br>Hal9000 chose Rock.<br>Spock vaporizes Rock!</p>').fadeIn(300);
             win++;
@@ -231,12 +226,19 @@ $('.button_spock').click(function() {
             $('#win-score').html('').append(win);
         });
     // spock vs Hal9000 lizard
-    } else {
+    } else if (Hal9000Pick === 4) {
         $("#message-area").fadeOut(300, function() {
             $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Lizard.<br>Spock poised by Lizard!</p>').fadeIn(300);
             lose++;
             $('#lose-score').html('').append(lose);
-        });                
+        });
+    //draw case, spock vs spock
+    } else {
+        $("#message-area").fadeOut(300, function() {
+            $("#message-area").html('').append('<p><span class="span-result-draw">Draw!</span><br>Hal9000 chose Spock too!</p>').fadeIn(300);
+            draw++;
+            $('#draw-score').html('').append(draw);
+        });
     }
 });//end of spock click
 
@@ -256,12 +258,35 @@ $(document).ready(function(){
   $('.day-night-button').click(function(){
     if (dayNight === 0) { //test for day or night, 0 = day, 1 = night
         $('body').css("background-color", "rgba(50, 50, 50 ,1)"); // changes body colour
-        dayNight = 1;
         $('.day-night-button').prop("value", "Day"); // changes button value
+        $('.score-board-area').css("color", "rgba(0, 0, 0, 1)"); // changes colour of text above scoreboards 
+        dayNight = 1;
         } else {
-            $("body").css("background-color", "rgba(255, 243, 176 ,1)");
-            dayNight = 0;
+            $('body').css("background-color", "rgba(255, 243, 176 ,1)");
             $('.day-night-button').prop("value", "Night");
+            $('.score-board-area').css("color", "rgba(221, 200, 162, 1);");
+            dayNight = 0;
         }
+    });
+});
+
+$(document).ready(function(){
+  $('.instructions-button').click(function(){
+    
+    Swal.fire({
+			title: 'How to play',
+			html:
+                "<p>Rock, Paper, Scissors, Lizard, Spock is an expansion on the game Rock, Paper, Scissors.</p>" +
+                "<p>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock</p>" +
+				"<br></br>" +
+				"Using either the arrow keys, number pad or WASD keys.",
+			confirmButtonText: `Lets Play`,
+			confirmButtonColor: '#CD4134',
+			allowOutsideClick: true,
+			width: 600,
+			padding: '3em',
+			background: '#fff',
+			backdrop: `rgba(0,0,0,0.5)`,
+		});
     });
 });
