@@ -101,19 +101,69 @@ once the user picks rock paper or scissors the large text area to the right will
 
 <h2>Technologies</h2>
 
-wireframes - wireframesketcher - https://wireframesketcher.com/
+<p>The Technologies used in this project are listed bellow.</p>
 
-GitHub - https://github.com/Darian-Frey
+<ul>
+    <li>
+        <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap 4</a>
+    </li>
+    <li>
+        <a href="https://en.wikipedia.org/wiki/HTML5" rel="nofollow">HTML5</a>
+    </li>
+    <li>
+        <a href="https://en.wikipedia.org/wiki/CSS" rel="nofollow">CSS3</a>
+    <li>
+        <a href="https://fontawesome.com/" rel="nofollow">Font Awesome</a>
+    </li>
+        <li>
+        <a href="https://fonts.google.com/" rel="nofollow">Google Fonts</a>
+    </li>
+    <li>
+        <a href="https://github.com/" rel="nofollow">GitHub for version control</a>
+    </li>
+    <li>
+        <a href="https://gitpod.io/" rel="nofollow">Gitpod</a>
+    </li>
+    <li>
+        <a href="https://wireframesketcher.com/" rel="nofollow">Wireframesketcher</a>
+    </li>
+    <li>
+        <a href="https://sweetalert2.github.io/" rel="nofollow">sweetalert2</a>
+    </li>
+</ul>
 
-GitPod - https://www.gitpod.io/
 
 <h2>Design</h2>
 
+<p>Inspiration for the game came from <a href="https://bigbangtheory.fandom.com/wiki/Main_Page" rel="nofollow">The Big Bang Theory</a>. In the episode <a href="https://bigbangtheory.fandom.com/wiki/The_Lizard-Spock_Expansion" rel="nofollow">The Lizard-Spock Expansion</a> Sheldon, Raj and Leonard are arguing about what to watch on TV, Raj suggests rock, paper, scissors. Sheldon says there is too much chance of a tie, and suggests Rock Paper Scissors Lizard Spock.</p>
+
+<p></p>
+
 <h2>Wireframes</h2>
+
+<p>The Wireframes were created using <a href="https://wireframesketcher.com/" rel="nofollow">wireframesketcher</a> a powerful desktop wire framing tool.</p>
+
+<h3>Desktop</h3>
+<a href="assets/wireframe/Desktop.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/Desktop.png" alt="Wireframe of Desktop">
+
+<h3>Desktop with annotation's</h3>
+<a href="assets/wireframe/Desktop-instructions.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/Desktop-instructions.png" alt="Wireframe of Desktop with annotation's">
+
+<h3>Mobile view</h3>
+<a href="assets/wireframe/Mobile.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/Mobile.png" alt="Wireframe of Mobile view">
+
+<h2>Logic flow diagram</h2>
+
+<p>The following Logic flow diagrams show the steps taken to test each of the conditions that would give either a win, lose or draw result.</p>
 
 <h2>Feature</h2>
 
 <h2>Testing</h2>
+
+[Testing](Testing.md)
 
 <h2>Deployment</h2>
 
@@ -128,21 +178,6 @@ https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
 
 https://css-tricks.com/
 
-https://www.dafont.com/open-24-display-st.font
-Open 24 Display ST
-https://www.dafont.com/south-type.d5515
-Rodrigo Gonzalez [Southype]
-
-
-https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
-
-https://www.fontsquirrel.com/tools/webfont-generator
-
-css ttf font example
-@font-face {
-  font-family: 'Tagesschrift';
-  src: url('tagesschrift.ttf');
-}
 
 https://coolors.co/
 

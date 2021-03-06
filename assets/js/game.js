@@ -258,14 +258,16 @@ $(document).ready(function(){
   $('.day-night-button').click(function(){
     if (dayNight === 0) { //test for day or night, 0 = day, 1 = night
         $('body').css("background-color", "rgba(50, 50, 50 ,1)"); // changes body colour
+        $('.score-board-label').css("color", "rgba(221, 200, 162, 1)"); // changes colour of text above scoreboards 
         $('.day-night-button').prop("value", "Day"); // changes button value
-        $('.score-board-area').css("color", "rgba(0, 0, 0, 1)"); // changes colour of text above scoreboards 
-        dayNight = 1;
-        } else {
-            $('body').css("background-color", "rgba(255, 243, 176 ,1)");
-            $('.day-night-button').prop("value", "Night");
-            $('.score-board-area').css("color", "rgba(221, 200, 162, 1);");
-            dayNight = 0;
+
+        dayNight++;
+    } else {
+        $('body').css("background-color", "rgba(255, 243, 176 ,1)");
+        $('.score-board-label').css("color", "rgba(0, 0, 0, 1);");
+        $('.day-night-button').prop("value", "Night");
+
+        dayNight--;
         }
     });
 });
@@ -277,9 +279,9 @@ $(document).ready(function(){
 			title: 'How to play',
 			html:
                 "<p>Rock, Paper, Scissors, Lizard, Spock is an expansion on the game Rock, Paper, Scissors.</p>" +
-                "<p>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock</p>" +
-				"<br></br>" +
-				"Using either the arrow keys, number pad or WASD keys.",
+                "<p>Invented by <a href='https://bigbangtheory.fandom.com/wiki/Sam_Kass'>Sam Kass</a> and played in the hit TV series <a href='https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock'>The Big Bang Theory</a>. Follow the link for Sheldon Cooper's full instructions on the game.</p>" +
+                "<p>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock. Once you've made your choice the computer will then pick one.</p>" +
+				"<p>Then depending on the out come you will receive a win, lose or draw</p>",
 			confirmButtonText: `Lets Play`,
 			confirmButtonColor: '#CD4134',
 			allowOutsideClick: true,
