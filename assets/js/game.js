@@ -257,15 +257,15 @@ $('.reset_button').click(function() {
 $(document).ready(function(){
   $('.day-night-button').click(function(){
     if (dayNight === 0) { //test for day or night, 0 = day, 1 = night
-        $('body').css("background-color", "rgba(50, 50, 50 ,1)"); // changes body colour
-        $('.score-board-label').css("color", "rgba(221, 200, 162, 1)"); // changes colour of text above scoreboards 
-        $('.day-night-button').prop("value", "Day"); // changes button value
+        $('body').css('background-color', 'rgba(50, 50, 50 ,1)'); // changes body colour
+        $('.score-board-label').css({'color': 'rgba(221, 200, 162, 1)'}); // changes colour of text above scoreboards 
+        $('.day-night-button').prop('value', 'Day'); // changes button value
 
         dayNight++;
     } else {
-        $('body').css("background-color", "rgba(255, 243, 176 ,1)");
-        $('.score-board-label').css("color", "rgba(0, 0, 0, 1);");
-        $('.day-night-button').prop("value", "Night");
+        $('body').css('background-color', 'rgba(255, 243, 176 ,1)');
+        $('.score-board-label').css({'color': 'rgba(0, 0, 0, 1)'});
+        $('.day-night-button').prop('value', 'Night');
 
         dayNight--;
         }

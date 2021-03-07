@@ -1,12 +1,12 @@
-<h1>Rock Paper Scissors</h1>
+<h1>Rock Paper Scissors Lizard Spock</h1>
 
 <h2>Interactive Frontend Development Milestone Project Two</h2>
 
-<P>My second Milestone Project will be an Interactive rock, paper, scissors game powered by Javascript.</p>
+<P>My second Milestone Project will be an Interactive rock, paper, scissors, Lizard, Spock game inspired by the game played on <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" rel="nofollow">The Big Bang Theory</a>.</p>
 
 <h2>User Experience (UX)</h2>
 
-<p>This website is designed to be an interactive Rock Paper Scissors game, where the user plays against the computer and can track their scores.</p>
+<p>This website is designed to be an interactive Rock Paper Scissors game with the addition of Lizard and Spock, where the user plays against the computer and can track their scores.</p>
 
 <h2>User Stories</h2>
 
@@ -130,6 +130,9 @@ once the user picks rock paper or scissors the large text area to the right will
     <li>
         <a href="https://sweetalert2.github.io/" rel="nofollow">sweetalert2</a>
     </li>
+    <li>
+        <a href="https://www.libreoffice.org/" rel="nofollow"><b>Libre</b>office</a>
+    </li>
 </ul>
 
 
@@ -155,9 +158,31 @@ once the user picks rock paper or scissors the large text area to the right will
 <a href="assets/wireframe/Mobile.pdf" rel="nofollow">PDF Link</a>
 <img src="assets/wireframe/Mobile.png" alt="Wireframe of Mobile view">
 
+<p>The final results may differ slightly from the wireframes.</p>
+
 <h2>Logic flow diagram</h2>
 
 <p>The following Logic flow diagrams show the steps taken to test each of the conditions that would give either a win, lose or draw result.</p>
+
+<h3>User picks Rock.</h3>
+<a href="assets/wireframe/User picks Rock.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/User picks Rock.jpg" alt="User pick Rock">
+
+<h3>User picks Paper.</h3>
+<a href="assets/wireframe/User picks Paper.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/User picks Paper.jpg" alt="User pick Paper">
+
+<h3>User picks Scissors.</h3>
+<a href="assets/wireframe/User picks Scissors.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/User picks Scissors.jpg" alt="User pick Scissors">
+
+<h3>User picks Lizard.</h3>
+<a href="assets/wireframe/User picks Lizard.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/User picks Lizard.jpg" alt="User pick Lizard">
+
+<h3>User picks Spock.</h3>
+<a href="assets/wireframe/User picks Spock.pdf" rel="nofollow">PDF Link</a>
+<img src="assets/wireframe/User picks Spock.jpg" alt="User pick Spock">
 
 <h2>Feature</h2>
 
