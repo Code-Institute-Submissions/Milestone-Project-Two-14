@@ -29,7 +29,7 @@ body {
     font-size: 1.2em;
     text-align: center;
     margin: auto;
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
     width: 80%;
 }
 
@@ -42,7 +42,7 @@ body {
 .inner-score-container {
   margin: 0px;
   width: 80%;
-  padding: 15px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
   list-style-type: none;
   overflow: auto;
 }
@@ -105,6 +105,16 @@ ul {
 
 .score-board-area-result {
     height: 50px;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #CD4134;
+    background-color: black;
+}
+
+.previous-score-board-area-result {
+    margin: auto;
+    height: 50px;
+    width: 150px;
     font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
     color: #CD4134;
@@ -184,7 +194,7 @@ ul {
 
 
 .inner-score-container {
-  margin: 35px;
+  margin: 10px 35px 10px 35px;
   width: 80%;
   padding: 15px 5px 5px 5px;
   list-style-type: none;
