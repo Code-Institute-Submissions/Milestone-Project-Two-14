@@ -244,9 +244,9 @@ $('.button_spock').click(function() {
 
 // reset button
 $('.reset_button').click(function() {
-    $('#lose-score').html('').append('000').fadeIn(300);// reset score boards
-    $('#win-score').html('').append('000').fadeIn(300);
-    $('#draw-score').html('').append('000').fadeIn(300);
+    $('#lose-score').html('').append('0').fadeIn(300);// reset score boards
+    $('#win-score').html('').append('0').fadeIn(300);
+    $('#draw-score').html('').append('0').fadeIn(300);
     draw = 0; // reset variables 
     win = 0;
     lose = 0;
@@ -278,16 +278,16 @@ $(document).ready(function(){
     Swal.fire({
 			title: 'How to play',
 			html:
-                "<p>Rock, Paper, Scissors, Lizard, Spock is an expansion on the game Rock, Paper, Scissors.</p>" +
-                "<p>Invented by <a href='https://bigbangtheory.fandom.com/wiki/Sam_Kass'>Sam Kass</a> and played in the hit TV series <a href='https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock'>The Big Bang Theory</a>. Follow the link for Sheldon Cooper's full instructions on the game.</p>" +
-                "<p>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock. Once you've made your choice the computer will then pick one.</p>" +
-				"<p>Then depending on the out come you will receive a win, lose or draw</p>",
+                "<p><b>Rock, Paper, Scissors, Lizard, Spock is an expansion on the game Rock, Paper, Scissors.</b></p>" +
+                "<p><b>Invented by <a href='https://bigbangtheory.fandom.com/wiki/Sam_Kass' target='_blank'>Sam Kass</a> and played in the hit TV series <a href='https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock' target='_blank'>The Big Bang Theory</a>. Follow the link for Sheldon Cooper's full instructions on the game.</b></p>" +
+                "<p><b>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock. Once you've made your choice the computer will then pick one.</b></p>" +
+				"<p><b>Then depending on the out come you will receive a win, lose or draw</b></p>",
 			confirmButtonText: `Lets Play`,
 			confirmButtonColor: '#CD4134',
 			allowOutsideClick: true,
 			width: 600,
 			padding: '3em',
-			background: '#fff',
+			background: '#DCDCDC',
 			backdrop: `rgba(0,0,0,0.5)`,
 		});
     });

@@ -207,3 +207,6 @@ https://css-tricks.com/
 https://coolors.co/
 
 https://sweetalert2.github.io/
+
+https://onextrapixel.com/creating-hal-9000-with-pure-css/
+For the Hal9000 logo
