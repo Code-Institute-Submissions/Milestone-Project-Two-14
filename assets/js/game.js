@@ -250,6 +250,7 @@ $('.reset_button').click(function() {
     draw = 0; // reset variables 
     win = 0;
     lose = 0;
+//    localStorage.setItem("highScore", 0); // to reset the previous high score uncomment this line
     $('#message-area').html('').append('<p class="play-a-game">Would You Like<br>To Play A Game?</p>').fadeIn(300); // changes text in results area
 });
 
@@ -261,17 +262,18 @@ $(document).ready(function(){
         $('.score-board-label').css({'color': 'rgba(221, 200, 162, 1)'}); // changes colour of text above scoreboards 
         $('.day-night-button').prop('value', 'Day'); // changes button value
 
-        dayNight++;
+        dayNight = 1;
     } else {
         $('body').css('background-color', 'rgba(255, 243, 176 ,1)');
         $('.score-board-label').css({'color': 'rgba(0, 0, 0, 1)'});
         $('.day-night-button').prop('value', 'Night');
 
-        dayNight--;
+        dayNight = 0;
         }
     });
 });
 
+// instructions popup
 $(document).ready(function(){
   $('.instructions-button').click(function(){
     
@@ -292,3 +294,25 @@ $(document).ready(function(){
 		});
     });
 });
+
+// retrieve highscore from localstorage, if highscore undefined set to 0
+$(document).ready(function() { // gets the highscore, sets the highscore
+
+    if (typeof localStorage["highScore"] == 'undefined') { // if highscore not set
+        var highScoreValueString = win.toString(); //convert win to string, set highscorevalue to win
+        localStorage.setItem("highScore", highScoreValueString); // set localstorage highscore to highscorevalue
+    } else {
+        var highScoreValue = parseInt(localStorage.getItem("highScore")); // get highscore from localstorage, convert highscore to int, set highscorevalue to highscore
+        $(".previous-score-board-area-result").html(' ').append(highScoreValue);
+    };
+})
+
+// when rock, paper, scissors, lizard or spock button clicked 
+$('#rock_select, #paper_select, #scissors_select, #lizard_select, #spock_select').click(function(){
+    var highScoreValue = parseInt(localStorage.getItem("highScore")); // get highscore from localstorage, convert to int, set highscorevalue to highscore
+    if (win > highScoreValue) { // if current score(win) more than highscorevalue(from localstorage)
+        $(".previous-score-board-area-result").html(' ').append(win); // set previous-score-board-area-result to win(int)
+        var highScoreValueString = win.toString(); // convert win to string, set highscorevaluestring to win(string)
+        localStorage.setItem("highScore", highScoreValueString); // set highscore(localstorage) to highscorevaluestring
+    };
+})
