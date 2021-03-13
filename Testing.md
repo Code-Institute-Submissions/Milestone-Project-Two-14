@@ -141,6 +141,35 @@
     </li>
 </ul>
 
+<h2>Testing the theme button</h2>
+
+<p>This test is to confirm that the theme button works while not affecting any other part of the game.</p>
+
+<ul>
+    <li>
+    <h3>Starting the game and pressing the theme button first.</h3>
+    <ol>
+        <li>Game starts with the following theme in style.css.</li>
+        <ul>
+            <li>body element css property background-color set to rgba(255, 243, 176 ,1) : <span style="color:green"> Confirmed &#9989</span></li>
+            <li>score-board-label class css property color set to rgba(0, 0, 0, 1) : <span style="color:green"> Confirmed &#9989</span></li>
+            <li>day-night-button class html property value set to 'Night' : <span style="color:green"> Confirmed &#9989</span></li>
+        </ul>
+        <li>On pressing the theme button now labeled 'Night'.</li>
+        <ul>
+            <li>body element css property background-color changed to rgba(50, 50, 50 ,1) : <span style="color:green"> Confirmed &#9989</span></li>
+            <li>score-board-label class css property color changed to rgba(221, 200, 162, 1) : <span style="color:green"> Confirmed &#9989</span></li>
+            <li>day-night-button class html property value changed to 'Day' : <span style="color:green"> Confirmed &#9989</span></li>
+        </ul>
+        <li>checking the scores and localstorage scores are not affected.</li>
+        <ul>
+            <li>Game starts, win lose and draw variables set to 0, previous high score retrieved from localstorage. : <span style="color:green"> Confirmed &#9989</span></li>
+            <li>Changing the theme does not affect win lose or draw scores and the pervious high score. : <span style="color:green"> Confirmed &#9989</span></li>
+        </ul>
+    </ol>
+    </li>
+</ul>
+
 <h2>Validating index.html with <a href="https://jigsaw.w3.org/css-validator/" rel="nofollow">W3C Markup Validation Service</a></h2>
 
 <P>Results</P>

@@ -281,7 +281,7 @@ $(document).ready(function(){
 			title: 'How to play',
 			html:
                 "<p><b>Rock, Paper, Scissors, Lizard, Spock is an expansion on the game Rock, Paper, Scissors.</b></p>" +
-                "<p><b>Invented by <a href='https://bigbangtheory.fandom.com/wiki/Sam_Kass' target='_blank'>Sam Kass</a> and played in the hit TV series <a href='https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock' target='_blank'>The Big Bang Theory</a>. Follow the link for Sheldon Cooper's full instructions on the game.</b></p>" +
+                "<p><b>Invented by <a href='https://bigbangtheory.fandom.com/wiki/Sam_Kass' target='_blank'>Sam Kass</a> and played on the hit TV series <a href='https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock' target='_blank'>The Big Bang Theory</a>. Follow the link for Sheldon Cooper's full instructions on the game.</b></p>" +
                 "<p><b>To play the game simply click on Rock, Paper, Scissors, Lizard or Spock. Once you've made your choice the computer will then pick one.</b></p>" +
 				"<p><b>Then depending on the out come you will receive a win, lose or draw</b></p>",
 			confirmButtonText: `Lets Play`,
