@@ -238,21 +238,15 @@ once the user picks rock paper or scissors the large text area to the right will
 
 <p>Click <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop" rel="nofollow">Here</a> to retrieve pictures for some of the buttons and more detailed explanations of the above process.</p>
 
-<h2>Credits</h2>
-
-https://www.w3schools.com/
-
-https://www.freecodecamp.org/
-
-The game
-https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
-
-https://css-tricks.com/
-
-
-https://coolors.co/
-
-https://sweetalert2.github.io/
-
-https://onextrapixel.com/creating-hal-9000-with-pure-css/
-For the Hal9000 logo
+<h2>Credits & Acknowledgements</h2>
+<p>I would like to thank the following.</p>
+<ul>
+    <li>Excellence Ilesanmi for his support and advice through this project.</li>
+    <li><a href="https://courses.codeinstitute.net/">Code Institute</a> for this excellent course.</li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://www.w3schools.com/">W3Schools</a>, <a href="https://www.freecodecamp.org/">freecodecamp</a> and <a href="https://css-tricks.com/">css-tricks</a> for all the example code.</li>
+    <li><a href="https://coolors.co/">Coolors</a> for the colours and theme ideas.</li>
+    <li><a href="https://sweetalert2.github.io/">Sweet alert 2</a> for the instructions popup.</li>
+    <li>Pete R. at <a href="https://onextrapixel.com/creating-hal-9000-with-pure-css/">onextrapixel</a> for the HAL9000 logo.</li>
+    <li><a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock">The Big Bang Theory</a> where the inspiration for the game came from.</li>
+    <li>And my partner for her near infinite tolerance of me obsessing over my code.</li>
+</ul>
