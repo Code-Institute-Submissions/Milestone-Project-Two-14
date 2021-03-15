@@ -2,8 +2,8 @@
 
 <h2>Interactive Frontend Development Milestone Project Two</h2>
 
-<P>My second Milestone Project will be an Interactive rock, paper, scissors, Lizard, Spock game inspired by the game played on <a href="https://darian-frey.github.io/Milestone-Project-Two/" rel="nofollow">The Big Bang Theory</a>.</p>
-<p>Follow this <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" rel="nofollow">Link</a> for the live site.</p>
+<P>My second Milestone Project will be an Interactive rock, paper, scissors, Lizard, Spock game inspired by the game played on <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" rel="nofollow">The Big Bang Theory</a>.</p>
+<p>Follow this <a href="https://darian-frey.github.io/Milestone-Project-Two/" rel="nofollow">Link</a> for the live site.</p>
 
 <h2>User Experience (UX)</h2>
 
