@@ -189,7 +189,7 @@
     </li>
 </ol>
 
-<p>Solution unknown: "content="ie-edge" already in meta element and changing "content="ie-edge" to "content="IE-edge" has the same results.</p>
+<p>Solution:Changed "content="ie-edge" to "content="ie=edge"</p>
 
 
 <h2>Validating sytle.css with <a href="https://jigsaw.w3.org/css-validator/" rel="nofollow"> W3C CSS Validation Service</a></h2>
@@ -255,3 +255,9 @@
         <td>'template literal syntax' is only available in ES6 (use 'esversion: 6').</td>
     </tr>
 </table>
+
+<h3>Bugs</h3>
+
+<p>The only major bug I've encountered while building this project was with the Day/Night button function in game.js.</p>
+<p>While trying to change the colour of the text with the class of score-board-label in style.css,<br> I discovered you have to format css property's in the following manor <code>({'color': 'rgba(221, 200, 162, 1)'})</code>, with an opening and closing curly bracket and a colon.</p>
+<p>Where as if you wish to change the css property's of a HTML tag "eg:the body tag" you don't need to opening and closing curly brackets and the colon can be replaced with a comma.<code>('background-color', 'rgba(50, 50, 50 ,1)')</code></p>
