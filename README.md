@@ -196,47 +196,47 @@ once the user picks rock paper or scissors the large text area to the right will
 
 <p>The project was deployed to GitHub Pages using the following steps...</p>
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CharlieMallon/milestoneTwo)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+<ol>
+    <li>Log in to GitHub and locate the <a href="https://github.com/Darian-Frey/Milestone-Project-Two" rel="nofollow">GitHub Repository</a></li>
+    <li>At the top of the Repository (not top of page), locate the "Settings" Button on the menu.<br>
+        - Alternatively Click <a href="https://raw.githubusercontent.com/" rel="nofollow">Here</a> for a GIF demonstrating the process starting from Step 2.</li>
+    <li>Scroll down the Settings page until you locate the "GitHub Pages" Section.</li>
+    <li>Under "Source", click the dropdown called "None" and select "Master Branch".</li>
+    <li>The page will automatically refresh.</li>
+    <li>Scroll back down through the page to locate the now published site <a href="https://github.com" rel="nofollow">Link</a> in the "GitHub Pages" section.</li>
+</ol>
 
-### Forking the GitHub Repository
+<h3>Forking the GitHub Repository</h3>
 
-By forking the GitHub Repository you make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+<p>By forking the GitHub Repository you make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository by using the following steps...</p>
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CharlieMallon/milestoneTwo)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+<ol>
+    <li>Log in to GitHub and locate the 1. Log in to GitHub and locate the <a href="https://github.com/Darian-Frey/Milestone-Project-Two" rel="nofollow">GitHub Repository</a></li>
+    <li>At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.</li>
+    <li>You should now have a copy of the original repository in your GitHub account.</li>
+</ol> 
 
-### Making a Local Clone
+<h3>Making a Local Clone</h3>
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CharlieMallon/milestoneTwo)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+<ol>
+    <li>Log in to GitHub and locate the <a href="https://github.com/Darian-Frey/Milestone-Project-Two" rel="nofollow">GitHub Repository</a></li>
+    <li>Under the repository name, click "Clone or download".</li>
+    <li>To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.</li>
+    <li>Open Git Bash</li>
+    <li>Change the current working directory to the location where you want the cloned directory to be made.<li/>
+    Type <code>git clone</code>, and then paste the URL you copied in Step 3.<br>
+    <code>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</code></li>
+    <li>Press Enter. Your local clone will be created.<br>
+    <code>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY<br>
+    > Cloning into `CI-Clone`...<br>
+    > remote: Counting objects: 10, done.<br>
+    > remote: Compressing objects: 100% (8/8), done.<br>
+    > remove: Total 10 (delta 1), reused 10 (delta 1)<br>
+    > Unpacking objects: 100% (10/10), done.</code></li>
+</ol>
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
 
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+<p>Click <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop" rel="nofollow">Here</a> to retrieve pictures for some of the buttons and more detailed explanations of the above process.</p>
 
 <h2>Credits</h2>
 
