@@ -185,8 +185,6 @@ once the user picks rock paper or scissors the large text area to the right will
 <a href="assets/wireframe/User picks Spock.pdf" rel="nofollow">PDF Link</a>
 <img src="assets/wireframe/User picks Spock.jpg" alt="User pick Spock">
 
-<h2>Feature</h2>
-
 <h2>Testing</h2>
 
 <p>For testing documentation please refer to the <a href="Testing.md" rel="nofollow">Testing markdown</a></p>

@@ -214,7 +214,7 @@ $('.button_spock').click(function() {
     // spock vs Hal9000 paper
     } else if (Hal9000Pick === 2) {
         $("#message-area").fadeOut(300, function() {
-            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Paper.<br>pock disproved by Paper!</p>').fadeIn(300);
+            $("#message-area").html('').append('<p><span class="span-result-lose">You Lost!</span><br>Hal9000 chose Paper.<br>Spock disproved by Paper!</p>').fadeIn(300);
             lose++;
             $('#lose-score').html('').append(lose);
         });
