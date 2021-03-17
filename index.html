@@ -1,41 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Orbitron:wght@400;500;600&family=Turret+Road:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Orbitron:wght@400;500;600&family=Turret+Road:wght@500&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/807aa8c83d.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script src="assets/js/jquery-3.5.1.js"></script>
-	<title >Rock, Paper Scissors, Lizard, Spock</title>
+    <title>Rock, Paper Scissors, Lizard, Spock</title>
 </head>
+
 <body>
     <header>
-        <div id="menu-container"> <!--Colour switch, Instruction and GitHub-->
+        <div id="menu-container">
+            <!--Colour switch, Instruction and GitHub-->
             <input class="btn day-night-button" type="button" value="Night">
             <input class="btn instructions-button" type="button" value="Instructions">
-            <a href="https://github.com/Darian-Frey/Milestone-Project-Two" class="btn" tabindex="-1" role="button" aria-disabled="true" target="_blank">GitHub link</a>
+            <a href="https://github.com/Darian-Frey/Milestone-Project-Two" class="btn" tabindex="-1" role="button"
+                aria-disabled="true" target="_blank">GitHub link</a>
         </div>
     </header>
     <div>
         <div id="previous-label" class="score-board-label">Previous High Score</div>
         <div id="previous-score" class="previous-score-board-area-result">0</div>
     </div>
-    <div id="outer-main-container" class="center"> <!--Container for main game area-->
-        <ul id="score-container" class=""> <!--scoreboard container-->
+    <div id="outer-main-container" class="center">
+        <!--Container for main game area-->
+        <ul id="score-container" class="">
+            <!--scoreboard container-->
             <li class="inner-score-container">
                 <div id="win-label" class="score-board-label">win</div>
                 <div id="win-score" class="score-board-area-result">0</div>
@@ -49,26 +59,31 @@
                 <div id="draw-score" class="score-board-area-result">0</div>
             </li>
         </ul>
-        <div id="inner-game-container" class=""> <!--game buttons-->
+        <div id="inner-game-container" class="">
+            <!--game buttons-->
             <div id="game-button-group" class="btn-group-vertical">
 
-                <ul  class="game-button-links">
+                <ul class="game-button-links">
                     <li class="">
-						<button onclick="rock_button" class="btn button_rock" id="rock_select"><i class="far fa-hand-rock"></i> Rock</button>
+                        <button class="btn button_rock" id="rock_select"><i class="far fa-hand-rock"></i> Rock</button>
                     </li>
                     <li class="">
-						<button onclick="paper_button" class="btn button_paper" id="paper_select"><i class="far fa-hand-paper"></i> Paper</button>
+                        <button class="btn button_paper" id="paper_select"><i class="far fa-hand-paper"></i>
+                            Paper</button>
                     </li>
                     <li class="">
-						<button onclick="scissors_button" class="btn button_scissors" id="scissors_select"><i class="far fa-hand-scissors"></i> Scissors</button>
+                        <button class="btn button_scissors" id="scissors_select"><i class="far fa-hand-scissors"></i>
+                            Scissors</button>
                     </li>
                     <li class="">
-						<button onclick="lizard_button" class="btn button_lizard" id="lizard_select"><i class="far fa-hand-lizard"></i> Lizard</button>
+                        <button class="btn button_lizard" id="lizard_select"><i class="far fa-hand-lizard"></i>
+                            Lizard</button>
                     </li>
                     <li class="">
-						<button onclick="spock_button" class="btn button_spock" id="spock_select"><i class="far fa-hand-spock"></i> Spock</button>
+                        <button class="btn button_spock" id="spock_select"><i class="far fa-hand-spock"></i>
+                            Spock</button>
                     </li>
-				</ul>
+                </ul>
 
             </div>
             <div class="result-area-text test-padding">
@@ -78,8 +93,9 @@
 
             </div>
         </div>
-        <button type="button" class="btn reset_button ">Reset</button><!--score reset button-->
-        
+        <button type="button" class="btn reset_button ">Reset</button>
+        <!--score reset button-->
+
         <div id="HAL9000-label" class="score-board-label">I am the H.A.L 9000. </div>
         <div class="notification">
             <div class="metal">
@@ -89,35 +105,40 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
 
     <footer>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<ul class="social-links">
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="sr-only">Facebook</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i> <span class="sr-only">Twitter</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i> <span class="sr-only">Instagram</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-youtube"></i> <span class="sr-only">YouTube</span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <ul class="social-links">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span
+                                    class="sr-only">Facebook</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i> <span
+                                    class="sr-only">Twitter</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i> <span
+                                    class="sr-only">LinkedIn</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i> <span
+                                    class="sr-only">Instagram</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-youtube"></i> <span
+                                    class="sr-only">YouTube</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-	</footer>
+
+    </footer>
     <script src="assets/js/game.js"></script>
 </body>
 
