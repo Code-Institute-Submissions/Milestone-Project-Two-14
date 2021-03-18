@@ -30,12 +30,11 @@
 
 <body>
     <header>
-        <h1 class="score-board-label page-title">Rock Paper Scissors</h1>
         <div id="menu-container">
             <!--Colour switch, Instruction and GitHub-->
-            <input class="btn day-night-button" type="button" value="Night">
-            <input class="btn instructions-button" type="button" value="Instructions">
-            <a href="https://github.com/Darian-Frey/Milestone-Project-Two" class="btn" tabindex="-1" role="button"
+            <input class="btn btn-small day-night-button" type="button" value="Night">
+            <input class="btn btn-small instructions-button" type="button" value="Instructions">
+            <a href="https://github.com/Darian-Frey/Milestone-Project-Two" class="btn btn-small" tabindex="-1" role="button"
                 aria-disabled="true" target="_blank">GitHub link</a>
         </div>
     </header>
@@ -43,7 +42,7 @@
         <div id="previous-label" class="score-board-label">Previous High Score</div>
         <div id="previous-score" class="previous-score-board-area-result">0</div>
     </div>
-    <div id="outer-main-container" class="center">
+    <div id="outer-main-container-small" class="center">
         <!--Container for main game area-->
         <ul id="score-container" class="">
             <!--scoreboard container-->
@@ -60,41 +59,42 @@
                 <div id="draw-score" class="score-board-area-result">0</div>
             </li>
         </ul>
-        <div id="inner-game-container" class="">
+        <div id="inner-game-container-small" class="">
             <!--game buttons-->
-            <div id="game-button-group" class="btn-group-vertical">
+            <div  class="btn-toolbar mb-3">
 
-                <ul id="btn-inline" class="game-button-links">
+                <ul id="small-btn-inline" class="game-button-links">
                     <li class="">
-                        <button class="game-btn btn button_rock" id="rock_select"><i class=""></i> Rock</button>
+                        <button class="game-btn-small btn button_rock" id="rock_select"><i class=""></i> Rock</button>
                     </li>
                     <li class="">
-                        <button class="game-btn btn button_paper" id="paper_select"><i class=""></i>
+                        <button class="game-btn-small btn button_paper" id="paper_select"><i class=""></i>
                             Paper</button>
                     </li>
                     <li class="">
-                        <button class="game-btn btn button_scissors" id="scissors_select"><i class=""></i>
+                        <button class="game-btn-small btn button_scissors" id="scissors_select"><i class=""></i>
                             Scissors</button>
                     </li>
                     <li class="">
-                        <button class="game-btn btn button_lizard" id="lizard_select"><i class=""></i>
+                        <button class="game-btn-small btn  button_lizard" id="lizard_select"><i class=""></i>
                             Lizard</button>
                     </li>
                     <li class="">
-                        <button class="game-btn btn button_spock" id="spock_select"><i class=""></i>
+                        <button class="game-btn-small btn button_spock" id="spock_select"><i class=""></i>
                             Spock</button>
                     </li>
                 </ul>
 
             </div>
-            <div class="result-area-text test-padding">
+
+            <div class="result-area-text-small play-a-game-small test-padding">
                 <div id="message-area" class="">
-                    <p class="play-a-game">Would You Like<br>To Play A Game?</p>
+                    <p class="">Would You Like<br>To Play A Game?</p>
                 </div>
 
             </div>
         </div>
-        <button type="button" class="btn reset_button ">Reset</button>
+        <button type="button" class="btn btn-small reset_button ">Reset</button>
         <!--score reset button-->
 
         <div id="HAL9000-label" class="score-board-label">I am the H.A.L 9000. </div>

@@ -251,7 +251,7 @@ $('.reset_button').click(function () {
     win = 0;
     lose = 0;
     //    localStorage.setItem("highScore", 0); // to reset the previous high score uncomment this line
-    $('#message-area').html('').append('<p class="play-a-game">Would You Like<br>To Play A Game?</p>').fadeIn(300); // changes text in results area
+    $('#message-area').html('').append('<p>Would You Like<br>To Play A Game?</p>').fadeIn(300); // changes text in results area
 });
 
 // day/night button

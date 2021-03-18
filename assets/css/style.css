@@ -2,10 +2,14 @@
     margin: auto;
 }*/
 
+.page-title {
+    margin: auto;
+}
+
 body {
     max-width: 1200px;
     text-align: center;
-    margin-left: auto;
+    margin-left: auto ;
     margin-right: auto;
     font-family: 'Jura', sans-serif;
     background-color: rgb(255, 243, 176);
@@ -19,7 +23,7 @@ body {
 #outer-main-container {
     margin: auto;
     width: 600px;
-    height: 610px;
+    height:610px;
 }
 
 #score-container {
@@ -33,30 +37,30 @@ body {
 }
 
 .center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .inner-score-container {
-    margin: 0px;
-    width: 80%;
-    padding: 0px 5px 5px 5px;
-    list-style-type: none;
-    overflow: auto;
+  margin: 0px;
+  width: 80%;
+  padding: 0px 5px 5px 5px;
+  list-style-type: none;
+  overflow: auto;
 }
 
 ul {
-    /*Removes default padding from ul*/
-    padding: 0px;
-    list-style-type: none;
+     /*Removes default padding from ul*/
+        padding: 0px;
+        list-style-type: none;
 }
 
 .result-area-text {
     margin: 10px;
     height: 200px;
     width: 400px;
-    font-size: 1.75rem;
+    font-size: 2rem;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -134,27 +138,28 @@ ul {
     margin: auto;
 }
 
-
 /* Style buttons */
-
 .btn {
     width: 130px;
-    background-color: #CD4134;
-    /* Blue background */
-    border: 0;
-    /* Remove borders */
-    padding: 5px 5px;
-    /* Some padding */
-    font-size: 20px;
-    /* Set a font size */
-    cursor: pointer;
-    /* Mouse pointer on hover */
+    background-color: #CD4134; /* Blue background */
+    border: 0; /* Remove borders */
+    padding: 5px 5px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
     margin: 11px 3px 3px 3px;
 }
 
+.game-btn {
+    width: 130px;
+    background-color: #CD4134; /* Blue background */
+    border: 0; /* Remove borders */
+    padding: 5px 5px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin: 11px 3px 3px 3px;
+}
 
 /* Darker background on mouse-over */
-
 .btn:hover {
     background-color: rgb(38, 70, 83);
     color: rgb(221, 200, 162);
@@ -187,42 +192,152 @@ ul {
     font-weight: 700;
 }
 
-@media (min-width: 800px) {
-    #outer-main-container {
-        margin: auto;
-        width: 800px;
-        height: 650px;
-    }
-    #menu-container {
-        text-align: right;
-        padding: 5px;
-    }
-    .inner-score-container {
-        margin: 0px 35px 10px 35px;
-        width: 80%;
-        padding: 0px 5px 5px 5px;
-        list-style-type: none;
-        overflow: auto;
-    }
-    #inner-game-container {
-        background-color: rgb(224, 159, 62);
-        margin: auto;
-        height: 320px;
-        width: 80%;
-        padding: 5px 5px 5px 5px;
-        list-style-type: none;
-        overflow: auto;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+ul#btn-inline li {
+  display:inline;
+}
+
+@media (max-width: 600px) {
+#outer-main-container {
+    margin: auto;
+    width: auto;
+    height: 610px;
+}
+
+.result-area-text {
+    margin: 10px;
+    height:215px;
+    width: 280px;
+    font-size: 1.75rem;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    background-color: black;
+}
+
+#inner-game-container {
+    background-color: rgb(224, 159, 62);
+    height: 325px;
+    width: auto;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.game-btn {
+    width: 90px;
+    background-color: #CD4134;
+    border: 0;
+    padding: 5px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 11px 1px 1px 1px;
+}
+
+.btn {
+    width: 100px;
+    background-color: #CD4134;
+    border: 0;
+    padding: 5px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 11px 1px 1px 1px;
+}
+
+ul#btn-inline li {
+  display:inline;
+}
+
+ul#btn-inline li {
+  display:inline;
+}
+
+#game-button-group {
+    width: unset;
+    list-style-type: none;
+}
+
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+#outer-main-container {
+    margin: auto;
+    width: 600px;
+    height:610px;
+}
+
+#menu-container {
+    text-align: center;
+}
+
+.inner-score-container {
+  margin: 0px;
+  width: 80%;
+  padding: 0px 5px 5px 5px;
+  list-style-type: none;
+  overflow: auto;
+}
+
+#inner-game-container {
+    background-color: rgb(224, 159, 62);
+    height: 280px;
+    width: 580px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+ul#btn-inline li {
+  display:inline;
+}
+
+}
+
+@media (min-width: 801px) {
+    
+
+#outer-main-container {
+    margin: auto;
+    width: 800px;
+    height:650px;
+}
+
+#menu-container {
+    text-align: right;
+    padding: 5px;
 }
 
 
-/*Hal9000 logo*/
+.inner-score-container {
+  margin: 0px 35px 10px 35px;
+  width: 80%;
+  padding: 0px 5px 5px 5px;
+  list-style-type: none;
+  overflow: auto;
+}
 
+#inner-game-container {
+    background-color: rgb(224, 159, 62);
+    margin: auto;
+    height: 290px;
+    width: 80%;
+    padding: 5px 5px 5px 5px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul#btn-inline li {
+  display:inline;
+}
+
+}
+
+/*Hal9000 logo*/
 .notification {
     margin: auto;
     background: #2D2A2B;
@@ -231,9 +346,9 @@ ul {
     background-image: -moz-linear-gradient(#494852, #2A2A30);
     background-image: -o-linear-gradient(#494852, #2A2A30);
     background-image: linear-gradient(#494852, #2A2A30);
-    box-shadow: inset 0 1px 0px rgba(255, 255, 225, 0.25), 0 1px 2px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 225, 0.25), 0 1px 2px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 225, 0.25), 0 1px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 0px rgba(255, 255, 225, 0.25),0 1px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 1px 0px rgba(255,255,225,0.25),0 1px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 225, 0.25),0 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -241,7 +356,6 @@ ul {
     width: 75px;
     height: 75px;
 }
-
 .metal {
     width: 70%;
     height: 70%;
@@ -262,10 +376,9 @@ ul {
     -moz-box-shadow: 0 2px 0 #21262c, 0 4px 0 #232429, 0 6px 0 #040003, 0 0 20px #000, 0 5px 20px #000, 0 -2px 0 #6d93a6;
     -webkit-box-shadow: 0 2px 0 #21262c, 0 4px 0 #232429, 0 6px 0 #040003, 0 0 20px #000, 0 5px 20px #000, 0 -2px 0 #6d93a6);
 }
-
 .light {
     position: relative;
-    border-radius: 50px;
+     border-radius: 50px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     width: 100%;
@@ -273,23 +386,23 @@ ul {
     box-shadow: inset 0 3px 0px #2e4452, inset 0 5px 0 #392c33;
     -moz-box-shadow: inset 0 3px 0px #2e4452, inset 0 5px 0 #392c33;
     -webkit-box-shadow: inset 0 3px 0px #2e4452, inset 0 5px 0 #392c33;
-    background: #ffe913;
+    background: #ffe913; 
     background: #920000;
     background: -moz-radial-gradient(center, ellipse cover, #920000 39%, #2d0408 67%, #000000 71%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(39%, #920000), color-stop(67%, #2d0408), color-stop(71%, #000000));
-    background: -webkit-radial-gradient(center, ellipse cover, #920000 39%, #2d0408 67%, #000000 71%);
-    background: -o-radial-gradient(center, ellipse cover, #920000 39%, #2d0408 67%, #000000 71%);
-    background: -ms-radial-gradient(center, ellipse cover, #920000 39%, #2d0408 67%, #000000 71%);
-    background: radial-gradient(ellipse at center, #920000 39%, #2d0408 67%, #000000 71%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#920000', endColorstr='#000000', GradientType=1);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(39%,#920000), color-stop(67%,#2d0408), color-stop(71%,#000000)); 
+    background: -webkit-radial-gradient(center, ellipse cover, #920000 39%,#2d0408 67%,#000000 71%); 
+    background: -o-radial-gradient(center, ellipse cover, #920000 39%,#2d0408 67%,#000000 71%); 
+    background: -ms-radial-gradient(center, ellipse cover, #920000 39%,#2d0408 67%,#000000 71%);
+    background: radial-gradient(ellipse at center, #920000 39%,#2d0408 67%,#000000 71%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#920000', endColorstr='#000000',GradientType=1 ); 
 }
-
+ 
 .glowing-red {
     position: absolute;
-    background: #F11A08;
+    background: #F11A08;  
     width: 45%;
     height: 45%;
-    margin: 28%;
+    margin:28%;
     border-radius: 50px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -297,12 +410,12 @@ ul {
     -moz-box-shadow: 0 0 15px #F11A08;
     -webkit-box-shadow: 0 0 15px #F11A08;
 }
-
+ 
 .glowing-yellow {
-    background: #FFE913;
+    background: #FFE913; 
     width: 50%;
     height: 50%;
-    margin: 24%;
+    margin:24%;
     border-radius: 50px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
