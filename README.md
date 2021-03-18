@@ -246,6 +246,7 @@ once the user picks rock paper or scissors the large text area to the right will
     <li><a href="https://coolors.co/">Coolors</a> for the colours and theme ideas.</li>
     <li><a href="https://sweetalert2.github.io/">Sweet alert 2</a> for the instructions popup.</li>
     <li>Pete R. at <a href="https://onextrapixel.com/creating-hal-9000-with-pure-css/">onextrapixel</a> for the HAL9000 logo.</li>
+    <li><a href="https://www.freeformatter.com/">Freeformatter.com</a>Free Online Tool for validating and beautifying HTML and CSS.</li>
     <li><a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock">The Big Bang Theory</a> where the inspiration for the game came from.</li>
     <li>And my partner for her near infinite tolerance of me obsessing over my code.</li>
 </ul>
